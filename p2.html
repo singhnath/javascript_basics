@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <input type="text" readonly id="output" value=""><br>
+  <input type="number" name="va_1" id="va_1"><br>
+  <input type="number" name="va_2" id="va_2"><br>
+
+  <input type="button" onclick="getval('+');" value="+">
+  <input type="button" onclick="getval('-');" value="-">
+
+  <script type="text/javascript">
+    function getval(x){
+      let va_1 = document.getElementById('va_1').value;
+      let va_2 = document.getElementById('va_2').value;
+      var output = document.getElementById('output');
+
+       switch(x){
+         case "+":
+           output.value = parseInt(va_1) + parseInt(va_2);
+           break;
+         case "-":
+           output.value = parseInt(va_1) - parseInt(va_2);
+           break;
+
+       } 
+
+
+    }
+
+
+  </script>
+
+
+</body>
+</html>
